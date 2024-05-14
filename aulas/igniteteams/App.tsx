@@ -8,8 +8,7 @@ import {
 import theme from "./src/theme";
 
 import { Loading } from "@components/Loading";
-
-import { Groups } from "@screens/Groups";
+import { Routes } from "./src/routes";
 
 export default function App() {
   const [fontsLoaded, fontError] = useFonts({
@@ -25,7 +24,7 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        {fontsLoaded ? <Groups /> : <Loading />}
+        {fontsLoaded ? <Routes /> : <Loading />}
       </>
     </ThemeProvider>
   );
